@@ -1,0 +1,5 @@
+google-generativeai
+requests
+gradio
+fpdf2
+python-dotenv
