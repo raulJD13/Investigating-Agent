@@ -1,3 +1,15 @@
+---
+title: Agente Investigador
+emoji: 🤖
+colorFrom: blue
+colorTo: green
+sdk: gradio
+app_file: app.py
+---
+
+# 🤖 Agente Investigador con IA (Gradio + Gemini + Perplexity)
+
+Este es un proyecto de porfolio que demuestra...
 # 🤖 Agente Investigador con IA (Gradio + Gemini + Perplexity)
 
 Este es un proyecto de porfolio que demuestra un agente de IA conversacional construido con Python. El agente utiliza un LLM (Gemini) como "cerebro" y tiene acceso a "herramientas" para realizar tareas en el mundo real.
