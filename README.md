@@ -7,7 +7,7 @@ sdk: gradio
 app_file: app.py
 ---
 
-# 🤖 Agente Investigador con IA (Gradio + Gemini + Perplexity)e
+# 🤖 Agente Investigador con IA (Gradio + Gemini + Perplexity)
 
 Este es un proyecto de porfolio que demuestra...
 # 🤖 Agente Investigador con IA (Gradio + Gemini + Perplexity)
