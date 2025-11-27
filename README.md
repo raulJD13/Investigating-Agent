@@ -7,68 +7,99 @@ sdk: gradio
 app_file: app.py
 ---
 
-#  Agente Investigador con IA (Gradio + Gemini + Perplexity)
 
-Este es un proyecto de porfolio que demuestra...
+# Agente Investigador con Inteligencia Artificial
+
+Este proyecto presenta un agente conversacional desarrollado en Python que integra un modelo de lenguaje avanzado y un conjunto de herramientas para ejecutar tareas del mundo real, incluyendo búsquedas web en tiempo real y generación de documentos PDF. Su propósito es servir como pieza demostrativa dentro de un portafolio profesional orientado a ingeniería de software e inteligencia artificial.
 
 ![Image](https://github.com/user-attachments/assets/4d1b0c5e-4020-4f7f-985e-7fb58d282437)
 
+## Descripción General
 
-#  Agente Investigador con IA (Gradio + Gemini + Perplexity)
+El agente combina un modelo de lenguaje de última generación con funciones externas que amplían sus capacidades. La arquitectura está diseñada bajo un enfoque modular: el modelo recibe la instrucción del usuario, determina si es necesario invocar una herramienta y gestiona la devolución del resultado final. La aplicación se ejecuta sobre una interfaz web desarrollada con Gradio.
 
-Este es un proyecto de porfolio que demuestra un agente de IA conversacional construido con Python. El agente utiliza un LLM (Gemini) como "cerebro" y tiene acceso a "herramientas" para realizar tareas en el mundo real.
+## Funcionalidades Principales
 
+* **Modelo de Lenguaje Avanzado**: Procesa instrucciones, mantiene contexto conversacional y selecciona acciones apropiadas.
+* **Búsqueda en Tiempo Real**: Acceso a información actualizada mediante una herramienta de consulta externa.
+* **Generación Automática de Documentos**: Posibilidad de crear y almacenar resúmenes o textos en formato PDF.
+* **Ejecución Automática de Herramientas**: El agente determina cuándo activar cada herramienta disponible.
+* **Interfaz Web Interactiva**: Sistema conversacional accesible vía navegador.
 
-##  Demo
-*(Aquí puedes poner un GIF o un enlace a tu Hugging Face Space una vez desplegado)*
+## Arquitectura del Sistema
 
-##  Características
+1. **Capa de LLM**: Gestiona la conversación y decide el flujo de acción.
+2. **Capa de Herramientas**: Conjunto de funciones que el modelo puede invocar de forma automática.
+3. **Capa de Integración**: Coordina las llamadas entre el modelo, las herramientas y la interfaz de usuario.
+4. **Interfaz de Usuario**: Construida con Gradio, permite comunicación directa con el agente.
 
-* **Procesamiento de Lenguaje Natural:** Utiliza **Google Gemini** para entender y responder a las peticiones del usuario.
-* **Búsqueda Web en Tiempo Real:** Integrado con la **API de Perplexity** para obtener información actualizada que el modelo no conoce.
-* **Agente Multi-Herramienta:** El agente puede decidir qué herramienta usar (`buscar` o `guardar_pdf`).
-* **Creación de Archivos:** Puede generar y guardar resúmenes en archivos PDF bajo demanda.
-* **Interfaz Web:** Utiliza **Gradio** para una interfaz de chat interactiva y fácil de usar.
+## Instalación
 
-##  Tecnologías Utilizadas
+### Requisitos Previos
 
-* **Python**
-* **Google Gemini (API):** El "cerebro" LLM.
-* **Perplexity AI (API):** La herramienta de búsqueda.
-* **Gradio:** Para la interfaz de usuario web.
-* **fpdf2:** Para la creación de PDFs.
-* **python-dotenv:** Para la gestión segura de claves API en local.
+* Python 3.10 o superior
+* Claves API para los servicios utilizados
 
-## Local (Cómo Ejecutarlo Localmente)
+### Pasos de Instalación
 
-1.  Clona este repositorio:
-    ```bash
-    git clone [https://github.com/tu-usuario/agente-investigador.git](https://github.com/tu-usuario/agente-investigador.git)
-    cd agente-investigador
-    ```
-2.  Crea un entorno virtual:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # (o .\venv\Scripts\activate en Windows)
-    ```
-3.  Instala las dependencias:
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  Crea un archivo `.env` en la raíz del proyecto y añade tus claves API:
-    ```env
-    GOOGLE_API_KEY="tu_clave_de_google"
-    PPLX_API_KEY="tu_clave_de_perplexity"
-    ```
-5.  Ejecuta la aplicación:
-    ```bash
-    python app.py
-    ```
-6.  Abre tu navegador en la dirección `http://127.0.0.1:7860`.
+1. Clonar el repositorio
 
+   ```bash
+   git clone https://github.com/tu-usuario/agente-investigador.git
+   cd agente-investigador
+   ```
+2. Crear un entorno virtual
 
-## Autor
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+3. Instalar dependencias
 
-Raúl Jiménez - Full Stack Developer & AI Enthusiast
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Configurar variables de entorno en `.env`
 
-Proyecto desarrollado como parte del portafolio profesional en Machine Learning Engineering.
+   ```env
+   GOOGLE_API_KEY="tu_clave_api"
+   PPLX_API_KEY="tu_clave_api"
+   ```
+5. Ejecutar la aplicación
+
+   ```bash
+   python app.py
+   ```
+
+## Estructura del Proyecto
+
+```
+├── app.py
+├── requirements.txt
+├── .env (no incluido)
+├── README.md
+└── assets/
+```
+
+## Flujo de Funcionamiento del Agente
+
+1. El usuario envía una solicitud mediante la interfaz.
+2. El modelo procesa la petición y analiza si requiere una herramienta.
+3. En caso necesario, el modelo activa la herramienta correspondiente mediante llamadas automáticas.
+4. Se devuelve al usuario una respuesta basada en datos actualizados o en procesos ejecutados.
+
+## Seguridad y Gestión de Secretos
+
+Las claves API se almacenan en un archivo `.env` y se cargan mediante `python-dotenv`. Este archivo no debe compartirse ni incluirse en controles de versión.
+
+## Posibles Mejoras Futuras
+
+* Incorporación de soporte para nuevas herramientas.
+* Registro persistente de interacciones.
+* Sistema avanzado de logs y métricas.
+* Despliegue en plataformas en la nube.
+
+## Autoría
+
+Raúl Jiménez.
+Desarrollado como parte del portafolio profesional orientado a ingeniería de software, inteligencia artificial y sistemas autónomos.
