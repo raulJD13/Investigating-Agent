@@ -10,9 +10,14 @@ app_file: app.py
 #  Agente Investigador con IA (Gradio + Gemini + Perplexity)
 
 Este es un proyecto de porfolio que demuestra...
+
+![Image](https://github.com/user-attachments/assets/4d1b0c5e-4020-4f7f-985e-7fb58d282437)
+
+
 #  Agente Investigador con IA (Gradio + Gemini + Perplexity)
 
 Este es un proyecto de porfolio que demuestra un agente de IA conversacional construido con Python. El agente utiliza un LLM (Gemini) como "cerebro" y tiene acceso a "herramientas" para realizar tareas en el mundo real.
+
 
 ##  Demo
 *(Aquí puedes poner un GIF o un enlace a tu Hugging Face Space una vez desplegado)*
