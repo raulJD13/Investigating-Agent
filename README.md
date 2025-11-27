@@ -7,17 +7,17 @@ sdk: gradio
 app_file: app.py
 ---
 
-# 🤖 Agente Investigador con IA (Gradio + Gemini + Perplexity)
+#  Agente Investigador con IA (Gradio + Gemini + Perplexity)
 
 Este es un proyecto de porfolio que demuestra...
-# 🤖 Agente Investigador con IA (Gradio + Gemini + Perplexity)
+#  Agente Investigador con IA (Gradio + Gemini + Perplexity)
 
 Este es un proyecto de porfolio que demuestra un agente de IA conversacional construido con Python. El agente utiliza un LLM (Gemini) como "cerebro" y tiene acceso a "herramientas" para realizar tareas en el mundo real.
 
-## 🚀 Demo
+##  Demo
 *(Aquí puedes poner un GIF o un enlace a tu Hugging Face Space una vez desplegado)*
 
-## ✨ Características
+##  Características
 
 * **Procesamiento de Lenguaje Natural:** Utiliza **Google Gemini** para entender y responder a las peticiones del usuario.
 * **Búsqueda Web en Tiempo Real:** Integrado con la **API de Perplexity** para obtener información actualizada que el modelo no conoce.
@@ -25,7 +25,7 @@ Este es un proyecto de porfolio que demuestra un agente de IA conversacional con
 * **Creación de Archivos:** Puede generar y guardar resúmenes en archivos PDF bajo demanda.
 * **Interfaz Web:** Utiliza **Gradio** para una interfaz de chat interactiva y fácil de usar.
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 * **Python**
 * **Google Gemini (API):** El "cerebro" LLM.
@@ -60,3 +60,10 @@ Este es un proyecto de porfolio que demuestra un agente de IA conversacional con
     python app.py
     ```
 6.  Abre tu navegador en la dirección `http://127.0.0.1:7860`.
+
+
+## Autor
+
+Raúl Jiménez - Full Stack Developer & AI Enthusiast
+
+Proyecto desarrollado como parte del portafolio profesional en Machine Learning Engineering.
